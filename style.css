@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: content-box;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+      background: url(backround-img/stock-photo-old-brick-black-color-wall-vintage-background-1605128917.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.My-profileCard {
+    width: 400px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.card-header {
+    background: rgb(23, 12, 53);
+    padding: 60px 40px;
+}
+
+.picture img {
+    display: block;
+    width: 150px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.picture {
+    display: inline-block;
+    padding: 8px;
+    background: linear-gradient(130deg, yellow, green);
+    margin: auto;
+    border-radius: 50%;
+    animation: animasyon 2s linear infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes animasyon {
+    25% {
+        background-position: left bottom;
+    }
+
+    50% {
+        background-position: right bottom;
+    }
+
+    75% {
+        background-position: right top;
+    }
+
+    100% {
+        background-position: left top;
+    }
+
+}
+
+.my-name {
+    font-weight: 600;
+    color: bisque;
+    margin: 10px 0;
+}
+.dsc{
+    font-size: 14px;
+    color: bisque;
+}
+.icons{
+    margin: 20px 0;
+    justify-content: center;
+    display:block;
+}
+.icons a{
+    font-size: 18px;
+    color: bisque;
+    transition:.3s linear;
+}
+.icons a:hover{
+color: #e66767;
+}
+.contakt-btn{
+padding: 12px 50px;
+display: inline-block;
+color: #e66767;
+border-radius: 7px;
+border: 2px solid #f2f2f2;
+transition:.3s linear;
+}
+
+.contakt-btn:hover{
+    background-color: #e28341;
+    color: #010814;
+}
+.card-footer{
+    background-color: #f4f4f4;
+    padding: 60px 10px;
+}
+.numbers{
+    display: flex;
+    align-items: center;
+}
+.item{
+    flex: 1px;
+    font-size: 13px;
+}
+.item span{
+    display: block;
+    color: #2c3a47;
+    font-size: 30px;
+}
